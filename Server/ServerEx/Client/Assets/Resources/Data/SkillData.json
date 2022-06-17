@@ -1,0 +1,50 @@
+{
+    "skills": [
+        {
+            "id": "1",
+            "name": "평타",
+            "cooldown": "0.5",
+            "damage": "10",
+            "skillType": "SkillAuto"
+        },
+        {
+            "id": "2",
+            "name": "화살 쏘기",
+            "cooldown": "0.5",
+            "damage": "3",
+            "skillType": "SkillProjectile",
+            "projectile": {
+                "name": "????",
+                "speed": "20.0",
+                "range": "10",
+                "prefab": "Creature/Arrow"
+            }
+        },
+        {
+            "id": "3",
+            "name": "총 쏘기",
+            "cooldown": "0.8",
+            "damage": "5",
+            "skillType": "SkillGun",
+            "projectile": {
+                "name": "????",
+                "speed": "20.0",
+                "range": "10",
+                "prefab": "Creature/Pistol"
+            }
+        },
+ 	{
+            "id": "4",
+            "name": "사이드 평타",
+            "cooldown": "1.2",
+            "damage": "12",
+            "skillType": "SkillSickle"
+        },{
+            "id": "5",
+            "name": "범위 공격",
+            "cooldown": "1.2",
+            "damage": "15",
+            "skillType": "SkillRange"
+        },
+    ]
+} 

@@ -1,0 +1,150 @@
+{
+  "monsters": [
+    {
+        "id": "1",
+        "name": "도플갱어",
+        "gold": "2000",
+        "totalexp": "25000",
+        "stat": {
+            "level": "20",
+            "maxHp": "280",
+            "attack": "25",
+            "speed": "5.0"
+        },
+        "rewards": [
+            {
+                "probability": "10",
+                "itemId": "1",
+                "count": "1"
+            },
+            {
+                "probability": "10",
+                "itemId": "2",
+                "count": "1"
+            },
+            {
+                "probability": "10",
+                "itemId": "100",
+                "count": "1"
+            },
+            {
+                "probability": "10",
+                "itemId": "101",
+                "count": "1"
+            },
+            {
+                "probability": "10",
+                "itemId": "200",
+                "count": "5"
+            },
+            {
+                "probability": "5",
+                "itemId": "201",
+                "count": "1"
+            },
+            {
+                "probability": "3",
+                "itemId": "202",
+                "count": "1"
+            },
+            {
+                "probability": "10",
+                "itemId": "260",
+                "count": "1"
+            },
+            {
+                "probability": "3",
+                "itemId": "261",
+                "count": "1"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "name": "좀비",
+        "gold": "300",
+        "totalexp": "150",
+        "stat": {
+            "level": "1",
+            "maxHp": "20",
+            "attack": "5",
+            "speed": "1.0"
+        },
+        "rewards": [
+            {
+                "probability": "10",
+                "itemId": "200",
+                "count": "5"
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "name": "나무괴물",
+        "gold": "800",
+	"totalexp": "700",
+        "stat": {
+            "level": "5",
+            "maxHp": "100",
+            "attack": "10",
+            "speed": "3.0"
+        },
+        "rewards": [
+            {
+                "probability": "10",
+                "itemId": "200",
+                "count": "5"
+            },
+            {
+                "probability": "5",
+                "itemId": "201",
+                "count": "1"
+            },
+            {
+                "probability": "10",
+                "itemId": "260",
+                "count": "1"
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "name": "오크괴물",
+        "gold": "1500",
+	"totalexp": "1400",
+        "stat": {
+            "level": "10",
+            "maxHp": "200",
+            "attack": "20",
+            "speed": "4.0"
+        },
+        "rewards": [
+            {
+                "probability": "10",
+                "itemId": "200",
+                "count": "5"
+            },
+            {
+                "probability": "5",
+                "itemId": "201",
+                "count": "1"
+            },
+            {
+                "probability": "3",
+                "itemId": "202",
+                "count": "1"
+            },
+            {
+                "probability": "10",
+                "itemId": "260",
+                "count": "1"
+            },
+            {
+                "probability": "3",
+                "itemId": "261",
+                "count": "1"
+            }
+        ]
+    }
+  ]
+} 

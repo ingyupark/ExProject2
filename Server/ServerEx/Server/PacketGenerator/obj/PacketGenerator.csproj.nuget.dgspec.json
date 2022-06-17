@@ -1,0 +1,74 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/bag-ingyu/ExProject/Server/ServerEx/Server/PacketGenerator/PacketGenerator.csproj": {}
+  },
+  "projects": {
+    "/Users/bag-ingyu/ExProject/Server/ServerEx/Server/PacketGenerator/PacketGenerator.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/bag-ingyu/ExProject/Server/ServerEx/Server/PacketGenerator/PacketGenerator.csproj",
+        "projectName": "PacketGenerator",
+        "projectPath": "/Users/bag-ingyu/ExProject/Server/ServerEx/Server/PacketGenerator/PacketGenerator.csproj",
+        "packagesPath": "/Users/bag-ingyu/.nuget/packages/",
+        "outputPath": "/Users/bag-ingyu/ExProject/Server/ServerEx/Server/PacketGenerator/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/bag-ingyu/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.19.4, )"
+            },
+            "System.Buffers": {
+              "target": "Package",
+              "version": "[4.5.1, )"
+            },
+            "System.Runtime.CompilerServices.Unsafe": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.406/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

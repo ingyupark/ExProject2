@@ -1,0 +1,7 @@
+services:
+  server:
+    build:
+      context: /Users/bag-ingyu/ExProject/Server/ServerEx/Server
+      dockerfile: Server/Dockerfile
+    image: server
+version: '3.4'

@@ -1,0 +1,349 @@
+syntax = "proto3";
+
+package Protocol;
+option csharp_namespace = "Google.Protobuf.Protocol";
+
+enum MsgId {
+  S_ENTER_GAME = 0;
+  S_LEAVE_GAME = 1;
+  S_SPAWN = 2;
+  S_DESPAWN = 3;
+  C_MOVE = 4;
+  S_MOVE = 5;
+  C_SKILL = 6;
+  S_SKILL = 7;
+  S_CHANGE_HP = 8;
+  S_DIE = 9;
+  S_CONNECTED = 10;
+  C_LOGIN = 11;
+  S_LOGIN = 12;
+  C_ENTER_GAME = 13;
+  C_CREATE_PLAYER = 14;
+  S_CREATE_PLAYER = 15;
+  S_ITEM_LIST = 16;
+  S_ADD_ITEM = 17;
+  C_EQUIP_ITEM = 18;
+  S_EQUIP_ITEM = 19;
+  S_CHANGE_STAT = 20;
+  S_PING = 21;
+  C_PONG = 22;
+  C_SLOT_COUNT = 23;
+  S_SLOT_COUNT = 24;
+  C_CHANGE_ICOUNT = 25;
+  S_CHANGE_ICOUNT = 26;
+  C_DRUNK_ITEM = 27;
+  S_DRUNK_ITEM = 28;
+  S_CHANGE_SP = 29;
+  S_CHAT = 30;
+  C_CHAT = 31;
+  S_GOLDLIST = 32;
+  S_ADDGOLD = 33;
+  C_BUYITEM = 34;
+  S_BUYNPC = 35;
+  C_POTAL = 36;
+  S_ALARM = 37;
+  C_LEVELUP_ITEM = 38;
+
+}
+
+enum CreatureState {
+  IDLE = 0;
+  MOVING = 1;
+  SKILL = 2;
+  DEAD = 3;
+}
+
+enum MoveDir {
+  UP = 0;
+  DOWN = 1;
+  LEFT = 2;
+  RIGHT = 3;
+}
+
+enum GameObjectType {
+  NONE = 0;
+  PLAYER = 1;
+  MONSTER = 2;
+  PROJECTILE = 3;
+  NPC = 4;
+  Potal = 5;
+}
+
+enum SkillType {
+  SKILL_NONE = 0;
+  SKILL_AUTO = 1;
+  SKILL_PROJECTILE = 2;
+  SKILL_GUN = 3;
+  SKILL_SICKLE = 4;
+  SKILL_RANGE = 5;
+}
+
+enum PlayerServerState {
+  SERVER_STATE_LOGIN = 0;
+  SERVER_STATE_LOBBY = 1;
+  SERVER_STATE_GAME = 2;
+}
+
+enum ItemType {
+  ITEM_TYPE_NONE = 0;
+  ITEM_TYPE_WEAPON = 1;
+  ITEM_TYPE_ARMOR = 2;
+  ITEM_TYPE_CONSUMABLE = 3;
+}
+
+enum WeaponType {
+  WEAPON_TYPE_NONE = 0;
+  WEAPON_TYPE_SWORD = 1;
+  WEAPON_TYPE_BOW = 2;
+  WEAPON_TYPE_GUN = 3;
+  WEAPON_TYPE_SICKLE = 4;
+
+}
+
+enum ArmorType {
+  ARMOR_TYPE_NONE = 0;
+  ARMOR_TYPE_HELMET = 1;
+  ARMOR_TYPE_ARMOR = 2;
+  ARMOR_TYPE_BOOTS = 3;
+}
+
+enum ConsumableType {
+   CONSUMABLE_TYPE_NONE = 0;
+   CONSUMABLE_TYPE_POTION = 1;
+}
+
+
+message S_EnterGame {
+  ObjectInfo player = 1;
+}
+
+message S_LeaveGame {
+}
+
+message S_Alarm{
+  string alarm = 1;
+}
+
+message S_Spawn {
+  repeated ObjectInfo objects = 1;
+}
+
+message S_Despawn {
+  repeated int32 objectIds = 1;
+}
+
+message C_Move {
+  PositionInfo posInfo = 1;
+}
+
+message S_Move {
+  int32 objectId = 1;
+  PositionInfo posInfo = 2;
+}
+
+message C_Skill {
+  SkillInfo info = 1;
+}
+
+message S_Skill {
+  int32 objectId = 1;
+  SkillInfo info = 2;
+}
+
+message S_ChangeHp {
+  int32 objectId = 1;
+  int32 hp = 2;
+}
+
+message S_ChangeSp {
+  int32 objectId = 1;
+  int32 sp = 2;
+}
+
+message S_Die {
+  int32 objectId = 1;
+  int32 attackerId = 2;
+}
+
+message S_Connected {
+}
+
+message C_Login {
+  string uniqueId = 1;
+}
+
+message S_Login {
+  int32 loginOk = 1;
+  repeated LobbyPlayerInfo players = 2;
+}
+
+message S_Chat{
+  int32 objectId = 1;
+  string sending = 2;  
+}
+
+message C_Chat{
+  int32 objectId = 1;
+  string sending = 2;  
+}
+
+message C_CreatePlayer {
+  string name = 1;
+}
+
+message S_CreatePlayer {
+  LobbyPlayerInfo player = 1;
+}
+
+message C_EnterGame {
+  string name = 1;
+  int32 roomid = 2;
+}
+
+message C_Potal{
+  int32 roomid = 1;
+}
+
+message S_ItemList {
+  repeated ItemInfo items = 1;
+}
+
+message S_AddItem {
+  repeated ItemInfo items = 1;
+}
+message S_GoldList {
+  int32 gold = 1;
+}
+
+message S_AddGold {
+  int32 gold = 1;
+}
+message C_Buyitem{
+  int32 objectId = 1;
+  int32 itemDbId = 2;
+}
+
+
+message S_Buynpc{
+  int32 npcId = 1;
+  string alarm = 2;
+}
+
+message C_EquipItem {
+  int32 itemDbId = 1;
+  bool equipped = 2;
+  int32 skillType =3; 
+}
+
+message S_EquipItem {
+  int32 itemDbId = 1;
+  bool equipped = 2;
+  int32 skillType = 3;
+  string alarm = 4;
+}
+message C_Levelup_Item {
+  int32 itemDbId = 1;
+}
+
+message S_ChangeStat {
+  repeated StatInfo statInfo = 1;
+  string alarm = 2;
+}
+
+message S_Ping {
+}
+
+message C_Pong {
+}
+
+message S_Slot_Count{
+  int32 itemDbId = 1;
+  int32 slot = 2;
+  string alarm = 3;
+}
+
+message C_Slot_Count{
+  int32 itemDbId = 1;
+  int32 slot = 2;
+}
+
+message S_Change_Icount{
+  int32 itemDbId = 1;
+  int32 count = 2;
+  bool iscount = 3;
+  string alarm = 4;
+}
+
+message C_Change_Icount{
+  int32 itemDbId = 1;
+  int32 count = 2;
+  bool iscount = 3;
+}
+
+message C_Drunk_Item{
+  int32 itemDbId = 1;
+}
+
+message S_Drunk_Item{
+  int32 itemDbId = 1;
+  int32 count = 2;
+  int32 playerDbId = 3;
+  int32 hp = 4;
+  int32 sp = 5;
+  string alarm = 6;
+
+}
+
+message LobbyPlayerInfo {
+  int32 playerDbId = 1;
+  string name = 2;
+  StatInfo statInfo = 3;
+}
+
+message ObjectInfo {
+  int32 objectId = 1;
+  string name = 2;
+  PositionInfo posInfo = 3;
+  StatInfo statInfo = 4;
+}
+
+message PositionInfo {
+  CreatureState state = 1;
+  MoveDir moveDir = 2;
+  int32 posX = 3;
+  int32 posY = 4;
+}
+
+message StatInfo {
+  int32 level = 1;
+  int32 hp = 2;
+  int32 maxHp = 3;
+  int32 attack = 4;
+  float speed = 5;
+  int32 totalExp = 6;
+  int32 skillType =7;
+  int32 hprecovery = 8;
+  int32 sp = 9;
+  int32 maxsp = 10;
+  int32 sprecovery = 11;
+  int32 exp = 12;
+  int32 gold = 13;
+
+}
+
+message SkillInfo {
+  int32 skillId = 1; 
+}
+
+message ItemInfo {
+  int32 itemDbId = 1;
+  int32 templateId = 2;
+  int32 count = 3;
+  int32 slot = 4;
+  bool equipped = 5;
+  bool issetcount = 6;
+  int32 skillType =7;
+  int32 level =8;
+  int32 damage =9;
+  int32 defence =10;
+}

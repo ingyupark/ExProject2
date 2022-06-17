@@ -1,0 +1,164 @@
+{
+  "stats": [
+    {
+      "level": "1",
+      "maxHp": "200",
+      "maxsp": "20",
+      "Hprecovery": "5",
+      "Sprecovery": "1",
+        "attack": "20",
+        "speed":  "10.0",
+      "totalExp": "200"
+    },
+    {
+        "level": "2",
+        "maxHp": "250",
+      	"maxsp": "40",
+      "Hprecovery": "5",
+      "Sprecovery": "1",
+        "attack": "25",
+        "speed": "10.0",
+        "totalExp": "1000"
+    },
+    {
+        "level": "3",
+        "maxHp": "300",
+        "maxsp": "60",
+      "Hprecovery": "5",
+      "Sprecovery": "1",
+        "attack": "30",
+        "speed": "10.0",
+        "totalExp": "5000"
+    },
+    {
+        "level": "4",
+        "maxHp": "350",
+        "maxsp": "80",
+      "Hprecovery": "5",
+      "Sprecovery": "1",
+        "attack": "35",
+        "speed": "10.0",
+        "totalExp": "15000"
+    },
+    {
+        "level": "5",
+        "maxHp": "380",
+        "maxsp": "90",
+      "Hprecovery": "5",
+      "Sprecovery": "1",
+        "attack": "38",
+        "speed": "10.0",
+        "totalExp": "38000"
+    },
+    {
+        "level": "6",
+        "maxHp": "450",
+        "maxsp": "100",
+      "Hprecovery": "5",
+      "Sprecovery": "1",
+        "attack": "42",
+        "speed": "10.0",
+        "totalExp": "68000"
+    },
+    {
+        "level": "7",
+        "maxHp": "800",
+        "maxsp": "110",
+      "Hprecovery": "5",
+      "Sprecovery": "1",
+        "attack": "50",
+        "speed": "10.0",
+        "totalExp": "100000"
+    },
+    {
+        "level": "8",
+        "maxHp": "1000",
+        "maxsp": "115",
+      "Hprecovery": "5",
+      "Sprecovery": "1",
+        "attack": "58",
+        "speed": "10.0",
+        "totalExp": "500000"
+    },
+    {
+        "level": "9",
+        "maxHp": "1200",
+        "maxsp": "130",
+      "Hprecovery": "5",
+      "Sprecovery": "1",
+        "attack": "70",
+        "speed": "10.0",
+        "totalExp": "800000"
+    },
+    {
+        "level": "10",
+        "maxHp": "1500",
+        "maxsp": "150",
+      "Hprecovery": "5",
+      "Sprecovery": "1",
+        "attack": "90",
+        "speed": "10.0",
+        "totalExp": "1500000"
+    },
+    {
+        "level": "11",
+        "maxHp": "2000",
+        "maxsp": "180",
+      "Hprecovery": "5",
+      "Sprecovery": "1",
+        "attack": "120",
+        "speed": "10.0",
+        "totalExp": "5500000"
+    },
+    {
+        "level": "12",
+        "maxHp": "3000",
+        "maxsp": "200",
+      "Hprecovery": "5",
+      "Sprecovery": "1",
+        "attack": "200",
+        "speed": "10.0",
+        "totalExp": "15500000"
+    },
+    {
+        "level": "13",
+        "maxHp": "4500",
+        "maxsp": "250",
+      "Hprecovery": "5",
+      "Sprecovery": "1",
+        "attack": "250",
+        "speed": "10.0",
+        "totalExp": "30500000"
+    },
+    {
+        "level": "14",
+        "maxHp": "6000",
+        "maxsp": "320",
+      "Hprecovery": "5",
+      "Sprecovery": "1",
+        "attack": "350",
+        "speed": "10.0",
+        "totalExp": "115500000"
+    },
+    {
+        "level": "15",
+        "maxHp": "9000",
+        "maxsp": "480",
+      "Hprecovery": "5",
+      "Sprecovery": "1",
+        "attack": "800",
+        "speed": "10.0",
+        "totalExp": "515500000"
+    },
+    {
+        "level": "16",
+        "maxHp": "10000",
+        "maxsp": "900",
+      "Hprecovery": "10",
+      "Sprecovery": "5",
+        "attack": "1000",
+        "speed": "12.0",
+        "totalExp": "815500000"
+    }
+  ]
+} 

@@ -1,0 +1,16 @@
+/Users/bag-ingyu/ExProject/Server/ServerEx/Server/PacketGenerator/bin/PacketGenerator.deps.json
+/Users/bag-ingyu/ExProject/Server/ServerEx/Server/PacketGenerator/bin/PacketGenerator.runtimeconfig.json
+/Users/bag-ingyu/ExProject/Server/ServerEx/Server/PacketGenerator/bin/PacketGenerator.runtimeconfig.dev.json
+/Users/bag-ingyu/ExProject/Server/ServerEx/Server/PacketGenerator/bin/PacketGenerator.dll
+/Users/bag-ingyu/ExProject/Server/ServerEx/Server/PacketGenerator/bin/PacketGenerator.pdb
+/Users/bag-ingyu/ExProject/Server/ServerEx/Server/PacketGenerator/bin/Google.Protobuf.dll
+/Users/bag-ingyu/ExProject/Server/ServerEx/Server/PacketGenerator/bin/System.Runtime.CompilerServices.Unsafe.dll
+/Users/bag-ingyu/ExProject/Server/ServerEx/Server/PacketGenerator/obj/Debug/PacketGenerator.csproj.AssemblyReference.cache
+/Users/bag-ingyu/ExProject/Server/ServerEx/Server/PacketGenerator/obj/Debug/PacketGenerator.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bag-ingyu/ExProject/Server/ServerEx/Server/PacketGenerator/obj/Debug/PacketGenerator.AssemblyInfoInputs.cache
+/Users/bag-ingyu/ExProject/Server/ServerEx/Server/PacketGenerator/obj/Debug/PacketGenerator.AssemblyInfo.cs
+/Users/bag-ingyu/ExProject/Server/ServerEx/Server/PacketGenerator/obj/Debug/PacketGenerator.csproj.CoreCompileInputs.cache
+/Users/bag-ingyu/ExProject/Server/ServerEx/Server/PacketGenerator/obj/Debug/PacketGenerator.csproj.CopyComplete
+/Users/bag-ingyu/ExProject/Server/ServerEx/Server/PacketGenerator/obj/Debug/PacketGenerator.dll
+/Users/bag-ingyu/ExProject/Server/ServerEx/Server/PacketGenerator/obj/Debug/PacketGenerator.pdb
+/Users/bag-ingyu/ExProject/Server/ServerEx/Server/PacketGenerator/obj/Debug/PacketGenerator.genruntimeconfig.cache

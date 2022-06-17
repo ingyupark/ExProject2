@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ie97G4dILeU2nRlVNpJrt7UDsv7r7xO0UE8NURTCWx41atpBz7EimEvyZjAq0Px/j4M4Og/Ru0YAXVNbjitrow==",
+  "success": true,
+  "projectFilePath": "/Users/bag-ingyu/ExProject/Server/ServerEx/Server/PacketGenerator/PacketGenerator.csproj",
+  "expectedPackageFiles": [
+    "/Users/bag-ingyu/.nuget/packages/google.protobuf/3.19.4/google.protobuf.3.19.4.nupkg.sha512",
+    "/Users/bag-ingyu/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
+    "/Users/bag-ingyu/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
+    "/Users/bag-ingyu/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,71 @@
+{
+    "npcs": [
+        {
+            "id": "1",
+            "name": "요리사",
+            "itemlist": [
+                {
+                    "itemId": "200",
+                    "goldcount": "100",
+                    "count": "5"
+                },
+                {
+                    "itemId": "201",
+                    "goldcount": "100",
+                    "count": "1"
+                },
+                {
+                    "itemId": "202",
+                    "goldcount": "200",
+                    "count": "1"
+                },
+                {
+                    "itemId": "260",
+                    "goldcount": "400",
+                    "count": "1"
+                },
+                {
+                    "itemId": "261",
+                    "goldcount": "600",
+                    "count": "1"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "대장장이",
+            "itemlist": [
+                {
+                    "itemId": "1",
+                    "goldcount": "1000",
+                    "count": "1"
+                },
+                {
+                    "itemId": "2",
+                    "goldcount": "1500",
+                    "count": "1"
+                },
+		{
+                    "itemId": "3",
+                    "goldcount": "10",
+                    "count": "1"
+                },
+		{
+                    "itemId": "4",
+                    "goldcount": "10",
+                    "count": "1"
+                },
+                {
+                    "itemId": "100",
+                    "goldcount": "1000",
+                    "count": "1"
+                },
+                {
+                    "itemId": "101",
+                    "goldcount": "1200",
+                    "count": "1"
+                }
+            ]
+        }
+    ]
+} 
